@@ -1,6 +1,11 @@
+language: generic 
+
 sudo: required
 services:
     - docker
 
 before_install:
     - docker build -t cs68/docker-react -f Dockerfile.dev .
+
+script:
+    - docker run -e CI=true cs68/docker-react npm run test
