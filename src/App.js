@@ -18,6 +18,8 @@ function App() {
         >
           Learn React
         </a>
+        <br/>
+        Le CI c'est fantastique :D
       </header>
     </div>
   );
